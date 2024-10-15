@@ -1,0 +1,28 @@
+mkdir git1
+cd git1
+git init 
+git add.
+echo "# git1" >> README.md
+git remote add orgin https://github.com/GrygielSzymon/git1.git
+git push orgin main
+
+
+1.  mkdir git1
+2.  cd git1
+3.  $ echo "# git1" >> README.md
+4.  $ git init
+5.  $ git add README.md
+6.  $ git commit -m "first commit"
+7.  $ git branch -M main
+8.  $ git remote add origin https://github.com/GrygielSzymon/git1.git
+9.  $ git push -u origin main
+10. $ git config --list
+11. $ git remote remove origin
+
+
+
+git config --global user.name "GrygielSzymon"
+git config --global user.email "szymongrygiel132@gmail.com"
+
+git config --global --unset user.name "GrygielSzymon"
+git config --global --unset user.email "szymongrygiel132@gmail.com"

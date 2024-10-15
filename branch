@@ -1,0 +1,9 @@
+git branch <nazwaGalezi>
+git checkout <nazwaGalezi>
+git chckout -b <nazwaGalezi>
+git merge <nazwaGalezi>
+git branch -d <nazwaGalezi>
+gałąź główna (main/master)
+gałęzie funkcjonalne (feature branches)
+gałąź naprawcze (bugfix)
+gałęcie eksperymentalne (experimental branches)

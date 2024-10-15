@@ -1,0 +1,160 @@
+Operacje na katalogach i plikach
+# Wyświetlenie bieżącego katalogu
+pwd
+
+# Zmiana katalogu (cd) i wklejanie adresu (shift + insert)
+cd shift + insert
+
+# Wyświetlenie plików w katalogu
+ls
+7
+# Wyświetlenie ukrytych plików
+ls -a
+
+# Wyświetlenie szczegółowych informacji o plikach (w tym ukrytych)
+ls -la
+
+# Tworzenie pliku README.md i zapisanie treści
+echo "# pierwszy projekt" > README.md
+
+# Tworzenie pliku "test" z zawartością "test"
+echo "test" > test
+
+# Wyświetlenie zawartości pliku .git
+cat .git
+
+# Tworzenie pustego pliku .git
+touch .git
+
+# Czyszczenie terminala
+clear
+
+# Tworzenie aliasu do czyszczenia ekranu
+alias c=clear
+
+Operacje na repozytorium git
+# Inicjalizacja nowego repozytorium Git
+git init
+
+# Wyświetlenie aktualnego stanu repozytorium
+git status
+
+# Klonowanie zdalnego repozytorium
+git clone link_do_repo
+
+# Dodanie pliku "test" do śledzenia
+git add test
+
+# Dodanie pliku README.md do śledzenia
+git add README.md
+
+# Tworzenie commitu z opisem "test"
+git commit -m "test"
+
+# Tworzenie commitu z opisem "dodanie pliku README.md do repo"
+git commit -m "dodanie pliku README.md do repo"
+
+# Wysyłanie zmian na zdalne repozytorium (gałąź master)
+git push -u origin master
+
+# Wysyłanie lokalnych commitów do zdalnego repozytorium
+git push
+
+Operacje na plikach i konfiguracji Gita
+# Wyświetlenie zawartości katalogu .git
+ls .git
+
+# Wyświetlenie zawartości katalogu info w folderze .git
+ls .git/info
+
+# Wyświetlenie pliku HEAD
+ls .git/HEAD
+
+# Wyświetlenie pliku config
+ls .git/config
+
+# Wyświetlenie pliku description
+ls .git/description
+
+Konfiguracja Git
+# Ustawienie globalnej nazwy użytkownika
+git config --global user.name "Twoje Imię"
+
+# Ustawienie globalnego adresu e-mail
+git config --global user.mail "twojmail"
+
+# Dodanie zdalnego repozytorium o nazwie origin
+git remote add origin https://github.com/nazaUzytkownika/nazwaRepozytorium.git
+
+# Usunięcie globalnego ustawienia nazwy użytkownika
+git config --global --unset user.name
+
+# Usunięcie globalnego ustawienia adresu e-mail
+git config --global --unset user.mail
+
+# Wyświetlenie listy konfiguracji Git
+git config --list
+
+Inne
+# Znak nowej linii w systemach Unix/Linux (LF)
+LF
+
+# Znak nowej linii w systemach Windows (CRLF)
+CRLF
+
+# Git - system kontroli wersji
+Git
+
+# GitHub - platforma hostingowa repozytoriów Git
+GitHub
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

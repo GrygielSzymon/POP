@@ -1,0 +1,63 @@
+Zadanie: Zaawansowane operacje w Git
+Cel: Nauka zaawansowanych operacji w Git, takich jak klonowanie repozytorium, dodawanie plików, commitowanie zmian (w tym za pomocą edytora Vim), pushowanie do zdalnego repozytorium, stashowanie i popowanie zmian, oraz praca z plikami i katalogami w konsoli.
+Instrukcje:
+1.	Klonowanie repozytorium (5 pkt):
+      o	Skopiuj poniższe repozytorium na swój lokalny komputer.
+2.	Dodawanie nowego pliku (5 pkt):
+      o	Przejdź do sklonowanego repozytorium.
+      o	Utwórz nowy plik o nazwie nowy_plik.txt.
+      o	Dodaj plik do śledzenia przez Git.
+3.	Commitowanie zmian (5 pkt):
+      o	Zatwierdź zmiany z odpowiednim komunikatem.
+4.	Commitowanie zmian za pomocą edytora Vim (5 pkt):
+      o	Wprowadź zmiany w pliku nowy_plik.txt.
+      o	Dodaj zmodyfikowany plik do śledzenia przez Git.
+      o	Zatwierdź zmiany za pomocą edytora Vim.
+5.	Pushowanie zmian (5 pkt):
+      o	Wyślij zmiany do zdalnego repozytorium.
+6.	Modyfikowanie pliku (5 pkt):
+      o	Otwórz plik nowy_plik.txt w edytorze tekstu i dopisz dowolny tekst.
+      o	Zapisz zmiany i zamknij edytor.
+      o	Dodaj zmodyfikowany plik do śledzenia przez Git.
+      o	Zatwierdź zmiany z odpowiednim komunikatem.
+7.	Praca z katalogami (5 pkt):
+      o	Utwórz nowy katalog o nazwie nowy_katalog.
+      o	Przenieś plik nowy_plik.txt do nowego katalogu.
+      o	Dodaj zmiany do śledzenia przez Git.
+      o	Zatwierdź zmiany z odpowiednim komunikatem.
+8.	Stashowanie i popowanie zmian (10 pkt):
+ 
+Ćwiczenie 1: Stashowanie i popowanie zmian
+      o	Wprowadź zmiany w pliku example.txt.
+      o	Zapisz zmiany do schowka.
+      o	Sprawdź status repozytorium, aby upewnić się, że zmiany zostały zapisane.
+      o	Przywróć zmiany ze schowka.
+      o	Sprawdź status repozytorium, aby upewnić się, że zmiany zostały przywrócone.
+Ćwiczenie 2: Stashowanie nieśledzonych plików
+      o	Utwórz nowy plik newfile.txt i wprowadź w nim zmiany.
+      o	Zapisz zmiany do schowka, w tym nieśledzone pliki.
+      o	Sprawdź status repozytorium, aby upewnić się, że zmiany zostały zapisane.
+      o	Przywróć zmiany ze schowka.
+      o	Sprawdź status repozytorium, aby upewnić się, że zmiany zostały przywrócone.
+Ćwiczenie 3: Stashowanie wybranych fragmentów zmian
+      o	Wprowadź zmiany w pliku example.txt.
+      o	Zapisz wybrane fragmenty zmian do schowka.
+      o	Sprawdź status repozytorium, aby upewnić się, że zmiany zostały zapisane.
+      o	Przywróć zmiany ze schowka.
+      o	Sprawdź status repozytorium, aby upewnić się, że zmiany zostały przywrócone.
+9.	Usuwanie pliku (5 pkt):
+      o	Usuń plik nowy_katalog/nowy_plik.txt.
+      o	Dodaj zmiany do śledzenia przez Git.
+      o	Zatwierdź zmiany z odpowiednim komunikatem.
+10.	Przywracanie pliku (5 pkt):
+      o	Przywróć usunięty plik z ostatniego commita.
+      o	Dodaj zmiany do śledzenia przez Git.
+      o	Zatwierdź zmiany z odpowiednim komunikatem.
+11.	Sprawdzanie statusu repozytorium (5 pkt):
+      o	Sprawdź status repozytorium, aby zobaczyć, które pliki zostały zmodyfikowane, dodane lub usunięte.
+12.	Wyświetlanie historii commitów (5 pkt):
+      o	Wyświetl historię commitów, aby zobaczyć wszystkie zmiany wprowadzone w repozytorium.
+Uwagi:
+      •	Upewnij się, że każda operacja jest poprawnie wykonana i zatwierdzona.
+      •	W razie problemów, skonsultuj się z dokumentacją Git lub zapytaj prowadzącego.
+
