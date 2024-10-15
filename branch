@@ -7,3 +7,42 @@ gałąź główna (main/master)
 gałęzie funkcjonalne (feature branches)
 gałąź naprawcze (bugfix)
 gałęcie eksperymentalne (experimental branches)
+
+
+Dodatkowe operacje
+Modyfikowanie pliku (5 pkt)
+Otwórz plik w edytorze tekstu, dopisz dowolny tekst, zapisz zmiany i zatwierdź je.
+Praca z katalogami (5 pkt)
+Utwórz nowy katalog, przenieś plik do nowego katalogu, dodaj zmiany do śledzenia i zatwierdź je.
+Usuwanie pliku (5 pkt)
+Usuń plik, dodaj zmiany do śledzenia i zatwierdź je.
+Wprowadzanie zmian w gałęzi feature-enhancement (5 pkt)
+Dodaj nową funkcjonalność do pliku i zatwierdź zmiany.
+Łączenie gałęzi feature-enhancement z main (5 pkt)
+Przełącz się na gałąź main i połącz zmiany.
+Usuwanie gałęzi feature-enhancement (5 pkt)
+Usuń gałąź po zakończeniu łączenia.
+Dodatkowe operacje z gałęziami bugfix i feature
+Tworzenie gałęzi bugfix (5 pkt)
+Utwórz nową gałąź bugfix i przełącz się na nią.
+Wprowadzanie zmian w gałęzi bugfix (5 pkt)
+Napraw błąd w pliku i zatwierdź zmiany.
+Łączenie gałęzi bugfix z main (5 pkt)
+Przełącz się na gałąź main i połącz zmiany z gałęzi bugfix.
+Tworzenie gałęzi feature (5 pkt)
+Utwórz nową gałąź feature i przełącz się na nią.
+Wprowadzanie zmian w gałęzi feature (5 pkt)
+Dodaj nową funkcjonalność do pliku i zatwierdź zmiany.
+Łączenie gałęzi feature z main (5 pkt)
+Przełącz się na gałąź main i połącz zmiany z gałęzi feature.
+Rozwiązywanie konfliktów
+Tworzenie konfliktu (5 pkt)
+Wprowadź zmiany w tym samym pliku w gałęzi main i gałęzi feature, które spowodują konflikt.
+Rozwiązywanie konfliktu (5 pkt)
+Połącz gałąź feature z main i rozwiąż konflikt ręcznie.
+Przykład konfliktu
+Tworzenie konfliktu w pliku (5 pkt)
+W gałęzi main zmień zawartość pliku plik_testowy.txt na “Zmiana w gałęzi main”.
+W gałęzi feature zmień zawartość pliku plik_testowy.txt na “Zmiana w gałęzi feature”.
+Rozwiązywanie konfliktu (5 pkt)
+Połącz gałąź feature z main i rozwiąż konflikt ręcznie, wybierając odpowiednie zmiany.
