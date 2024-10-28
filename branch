@@ -1,48 +1,95 @@
+# Tworzenie nowej gałęzi
 git branch <nazwaGalezi>
 git checkout <nazwaGalezi>
-git chckout -b <nazwaGalezi>
-git merge <nazwaGalezi>
+
+# Lub tworzenie i przełączanie się na nową gałąź jednocześnie
+git checkout -b <nazwaGalezi>
+
+# Łączenie gałęzi (np. feature-enhancement z main)
+git checkout main
+git merge feature-enhancement
+
+# Usuwanie gałęzi
 git branch -d <nazwaGalezi>
-gałąź główna (main/master)
-gałęzie funkcjonalne (feature branches)
-gałąź naprawcze (bugfix)
-gałęcie eksperymentalne (experimental branches)
 
+# Dodatkowe operacje
 
-Dodatkowe operacje
-Modyfikowanie pliku (5 pkt)
-Otwórz plik w edytorze tekstu, dopisz dowolny tekst, zapisz zmiany i zatwierdź je.
-Praca z katalogami (5 pkt)
-Utwórz nowy katalog, przenieś plik do nowego katalogu, dodaj zmiany do śledzenia i zatwierdź je.
-Usuwanie pliku (5 pkt)
-Usuń plik, dodaj zmiany do śledzenia i zatwierdź je.
-Wprowadzanie zmian w gałęzi feature-enhancement (5 pkt)
-Dodaj nową funkcjonalność do pliku i zatwierdź zmiany.
-Łączenie gałęzi feature-enhancement z main (5 pkt)
-Przełącz się na gałąź main i połącz zmiany.
-Usuwanie gałęzi feature-enhancement (5 pkt)
-Usuń gałąź po zakończeniu łączenia.
-Dodatkowe operacje z gałęziami bugfix i feature
-Tworzenie gałęzi bugfix (5 pkt)
-Utwórz nową gałąź bugfix i przełącz się na nią.
-Wprowadzanie zmian w gałęzi bugfix (5 pkt)
-Napraw błąd w pliku i zatwierdź zmiany.
-Łączenie gałęzi bugfix z main (5 pkt)
-Przełącz się na gałąź main i połącz zmiany z gałęzi bugfix.
-Tworzenie gałęzi feature (5 pkt)
-Utwórz nową gałąź feature i przełącz się na nią.
-Wprowadzanie zmian w gałęzi feature (5 pkt)
-Dodaj nową funkcjonalność do pliku i zatwierdź zmiany.
-Łączenie gałęzi feature z main (5 pkt)
-Przełącz się na gałąź main i połącz zmiany z gałęzi feature.
-Rozwiązywanie konfliktów
-Tworzenie konfliktu (5 pkt)
-Wprowadź zmiany w tym samym pliku w gałęzi main i gałęzi feature, które spowodują konflikt.
-Rozwiązywanie konfliktu (5 pkt)
-Połącz gałąź feature z main i rozwiąż konflikt ręcznie.
-Przykład konfliktu
-Tworzenie konfliktu w pliku (5 pkt)
-W gałęzi main zmień zawartość pliku plik_testowy.txt na “Zmiana w gałęzi main”.
-W gałęzi feature zmień zawartość pliku plik_testowy.txt na “Zmiana w gałęzi feature”.
-Rozwiązywanie konfliktu (5 pkt)
-Połącz gałąź feature z main i rozwiąż konflikt ręcznie, wybierając odpowiednie zmiany.
+# Modyfikowanie pliku (5 pkt)
+# Otwórz plik w edytorze tekstu, dopisz dowolny tekst, zapisz zmiany i zatwierdź je
+git add <nazwaPliku>
+git commit -m "Dodano zmiany do pliku"
+
+# Praca z katalogami (5 pkt)
+# Utwórz nowy katalog, przenieś plik do nowego katalogu, dodaj zmiany do śledzenia i zatwierdź je
+mkdir <nazwaKatalogu>
+mv <nazwaPliku> <nazwaKatalogu>/
+git add <nazwaKatalogu>/
+git commit -m "Przeniesiono plik do nowego katalogu"
+
+# Usuwanie pliku (5 pkt)
+rm <nazwaPliku>
+git add <nazwaPliku>
+git commit -m "Usunięto plik"
+
+# Wprowadzanie zmian w gałęzi feature-enhancement (5 pkt)
+# Przełącz się na gałąź feature-enhancement, dodaj nową funkcjonalność do pliku i zatwierdź zmiany
+git checkout feature-enhancement
+echo "Nowa funkcjonalność" >> <nazwaPliku>
+git add <nazwaPliku>
+git commit -m "Dodano nową funkcjonalność w feature-enhancement"
+
+# Łączenie gałęzi feature-enhancement z main (5 pkt)
+git checkout main
+git merge feature-enhancement
+
+# Usuwanie gałęzi feature-enhancement (5 pkt)
+git branch -d feature-enhancement
+
+# Dodatkowe operacje z gałęziami bugfix i feature
+
+# Tworzenie gałęzi bugfix (5 pkt)
+git checkout -b bugfix
+
+# Wprowadzanie zmian w gałęzi bugfix (5 pkt)
+echo "Naprawa błędu" >> <nazwaPliku>
+git add <nazwaPliku>
+git commit -m "Naprawiono błąd w gałęzi bugfix"
+
+# Łączenie gałęzi bugfix z main (5 pkt)
+git checkout main
+git merge bugfix
+
+# Tworzenie gałęzi feature (5 pkt)
+git checkout -b feature
+
+# Wprowadzanie zmian w gałęzi feature (5 pkt)
+echo "Nowa funkcjonalność w gałęzi feature" >> <nazwaPliku>
+git add <nazwaPliku>
+git commit -m "Dodano nową funkcjonalność w gałęzi feature"
+
+# Łączenie gałęzi feature z main (5 pkt)
+git checkout main
+git merge feature
+
+# Rozwiązywanie konfliktów
+
+# Tworzenie konfliktu (5 pkt)
+# W gałęzi main zmień zawartość pliku plik_testowy.txt na “Zmiana w gałęzi main”
+git checkout main
+echo "Zmiana w gałęzi main" > plik_testowy.txt
+git add plik_testowy.txt
+git commit -m "Zmiana w gałęzi main"
+
+# W gałęzi feature zmień zawartość pliku plik_testowy.txt na “Zmiana w gałęzi feature”
+git checkout feature
+echo "Zmiana w gałęzi feature" > plik_testowy.txt
+git add plik_testowy.txt
+git commit -m "Zmiana w gałęzi feature"
+
+# Rozwiązywanie konfliktu (5 pkt)
+git checkout main
+git merge feature
+
+# Rozwiąż konflikt ręcznie w pliku plik_testowy.txt, usuń niechciane zmiany, zachowaj właściwe
+git add plik_testowy.txt
+git commit -m "Rozwiązano konflikt między main a feature"
