@@ -1,0 +1,70 @@
+Zadanie: Praca z Git
+Klonowanie repozytorium:
+
+Sklonuj przykładowe repozytorium z GitHub.
+
+Komenda: git clone <URL>
+
+Przeglądanie historii zmian:
+
+Wyświetl historię zmian w repozytorium.
+
+Komenda: git log
+
+Zidentyfikuj ostatnie trzy commity.
+
+Zmiana nazwy pliku:
+
+Zmień nazwę pliku old_document.txt na new_document.txt.
+
+Komenda: git mv old_document.txt new_document.txt
+
+Zatwierdź zmiany: git commit -m "Renamed old_document.txt to new_document.txt"
+
+Usuwanie pliku:
+
+Usuń plik obsolete_file.txt.
+
+Komenda: git rm obsolete_file.txt
+
+Zatwierdź zmiany: git commit -m "Removed obsolete_file.txt"
+
+Śledzenie historii zmian konkretnego pliku:
+
+Wyświetl historię zmian pliku critical_file.txt.
+
+Komenda: git log critical_file.txt
+
+Identyfikacja autorów zmian:
+
+Zidentyfikuj autorów zmian w pliku critical_file.txt.
+
+Komenda: git blame critical_file.txt
+
+Refaktoryzacja kodu:
+
+Wykonaj refaktoryzację kodu w pliku script.py, np. zmień nazwy zmiennych, podziel duże funkcje na mniejsze.
+
+Zatwierdź zmiany: git commit -m "Refactored code in script.py"
+
+Przeglądanie zmian po refaktoryzacji:
+
+Wyświetl historię zmian po refaktoryzacji.
+
+Komenda: git log
+
+Zidentyfikuj commit związany z refaktoryzacją.
+
+Przywracanie usuniętego pliku:
+
+Przywróć usunięty plik obsolete_file.txt z historii.
+
+Komenda: git checkout <commit_id> -- obsolete_file.txt
+
+Zatwierdź zmiany: git commit -m "Restored obsolete_file.txt"
+
+Stashowanie zmian:
+
+Wprowadź zmiany w pliku temp_work.txt, ale nie zatwierdzaj ich.
+
+Komenda: git stash save "Temporary changes"
