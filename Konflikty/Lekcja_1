@@ -1,1 +1,23 @@
-1. 
+Zadanie: Rozwiązywanie konfliktów w Git 
+Instrukcje: 
+1. Utwórz nowe repozytorium na GitHubie o nazwie kolokwium-konflikty. 
+2. Sklonuj repozytorium na swój lokalny komputer. 
+3. Utwórz plik konflikt.txt i dodaj do niego następującą zawartość: 
+4. Pierwsza linia 
+5. Zatwierdź zmiany i wypchnij je do głównej gałęzi (main). 
+6. Utwórz nową gałąź o nazwie galaz-1 i dodaj do pliku konflikt.txt następującą linię: 
+7. Linia z gałęzi 1 
+8. Zatwierdź zmiany i wypchnij je do gałęzi galaz-1. 
+9. Wróć do głównej gałęzi (main) i dodaj do pliku konflikt.txt następującą linię: 
+10. Linia z głównej gałęzi 
+11. Zatwierdź zmiany i wypchnij je do głównej gałęzi (main). 
+12. Spróbuj scalić gałąź galaz-1 z główną gałęzią (main). Powinien pojawić się konflikt. 
+13. Rozwiąż konflikt w pliku konflikt.txt, łącząc zmiany z obu gałęzi w następujący sposób: 
+14. Pierwsza linia 
+15. Linia z głównej gałęzi i gałęzi 1 
+16. Zatwierdź rozwiązanie konfliktu i wypchnij zmiany do głównej gałęzi (main). 
+
+Pytania: 
+1. Opisz, co to jest konflikt w Git i kiedy może wystąpić. 
+2. Wyjaśnij, jakie kroki podjąłeś, aby rozwiązać konflikt w pliku konflikt.txt. 
+3. Jakie są najlepsze praktyki, aby unikać konfliktów w Git? 
