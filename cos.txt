@@ -1,0 +1,77 @@
+Dokument wymagań projektowych
+System zarządzania produktami (ASP .NET core MVC)
+=================================
+    1. Wprowadzenie
+       1.1   Nazwa projektu: System zarządzania produktami
+	1.2   Cel projektu:
+		Stworzenie nowoczesnej, wielofunkcyjnej aplikacji webowej do zarządzania produktami z 		zaawansowanymi funkcjami, takimi jak logowanie użytkowników, recenzje produktów, 			dynamiczne raporty i filtrowanie. System będzie obsługiwał role użytkowników oraz 			administratorów.
+	1.3   Zakres projektu:
+		Aplikacja oparta na ASP .NET Core MVC z C# jako językiem backendowym i bazą danych SQL 		Server. 	System ma działać w oparciu o nowoczesne standardy, z optymalizacją wydajność i 		integracją z zewnętrznymi API oraz modułami.
+=================================
+    2. Główne wymagania funkcjonalne
+	2.1   Moduł zarządzania użytkownikami
+	2.2   Zarządzanie produktami
+	2.3   Moduł recenzji i ocen
+	2.4   Dashboard administracyjny
+	2.5   Integracje zewnętrzne
+	2.6   Optymalizacja wydajności
+=================================
+    3. Wymagania niefunkcjonalne
+	3.1   Wydajność
+    • Aplikacja powinna obsługiwać do 1000 aktywnych użytkowników jednocześnie
+    • strona produktu powinna ładować się w czasie krótszym niż 3 sekundy
+3.2   Bezpieczeństwo
+    • System mus zapewnić hashowanie haseł użytkowników przy użyciu bezpiecznych algorytmów kryptograficznych, takich jak bcrypt, Argon2 lub PBKDF2, z wykorzystaniem unikalnej soli dla każdego użytkownika
+    • Dane komunikowane między serwerem a klientem powinny być zabezpieczone protokołem HTTPS
+	3.3   Skalowalność
+    • Aplikacja powinna być zaprojektowana zgodnie z zasadą molarności i luźnego powiązania komponentów, aby umożliwić łatwe dodawanie nowych funkcjonalności bez konieczności ingerencji w istniejący kod
+    • Powinna wykorzystywać zasady SOLID, wzorzec projektowy CQRS w warstwie logiki biznesowej, natomiast MVC jako warstwę prezentacji
+    • Warto zastosować Dependency Injecton (DI), aby umożliwić łatwą wymianę komponentów oraz testowalność
+    • Aplikacja powinna być projektowana jako cloude-ready, co oznacza:
+        ◦ Wykorzystanie konteneryzacji(np. Docker) i orkestracji (np. Kbernets)
+        ◦ Możliwość wdrożenia jako server less (np. AWS Lambda) lub w module PaaS (np.Azure App Servce)
+        ◦ Obsługa rozproszonych baz danych (np. Azure SQL, AWS RDS) z możliwością replikacj i automatycznego skalowania
+        ◦ Integrację z usługami chmurowymi, taki jak monitoring (Azure Monitror), logowanie (ELK Stack) oraz CI/CD (GitHub actions, Azure DevOps)
+	3.4   Użyteczność
+    • Interfejs aplikacji musi być intuicyjny i przystosowany do urządzeń mobilnych (responsive design)
+	3.5   Kompatybilność
+    • przeglądarki: Chrome, Firefox, EDGE
+    • System operacyjny serwera: Windows Serwer 2022
+=================================
+    4. Technologia i narzędzia
+       4.1   Technologia backend
+            ▪ ASP .NET Core(Model-View-Controler)
+            ▪ C# .NET 9
+            ▪ Entity framework Core 9.0
+       4.2   technologie frontend
+            ▪ HTML5, CSS3
+            ▪ Bootstrap do responsywngo designu
+            ▪ Chart.js lub Google Chats do wizualizacji danych
+       4.3   bazy danych
+            ▪ MS SQL Server 2022 (z pełnotekstowym wyszukiwaniem)
+       4.4   Narzędzia wdrożeniowe
+            ▪ MS Visual Studio 2022
+            ▪ Git do kontroli wersji
+            ▪ Redis do cache’owania
+            ▪ Azure Blob Storage lub system plików do przechowywania zdjęć
+=================================
+    5. Harmonogram projektu
+Etap	Czas Trwania	Opis
+Analiza wymagań	1 tydzień	Zbieranie wymagań i przygotowanie specyfikacji
+Projetowanie UI/UX	1 tydzień	Tworzenie makiet i interfejsu
+Implementacja backend	4 tygodnie	Tworzenie logiki aplikacji oraz bazy danych
+Implementacja frontend	3 tygodnie	Dodanie interfejsu i funkcji JS
+Testowanie	2 tygodnie	Testowanie jednostkowe i integracyjne
+Wdrożenie i dokumentacja	1 tydzień	Przekazanie projektu z dokumentacją
+
+Całkowity czas trwania: 12 tygodni.
+=================================
+    6. Kryteria akceptacji
+        ◦ Wszystkie Funkcjonalności działają zgodnie z wymaganiami
+        ◦ Aplikacja spełnia wymagania wydajnościowe i bezpieczeństwa
+        ◦ Testy jednostkowe i integracyjne zakończone sukcesem
+        ◦ Kod jest zgodny ze standardami programistycznymi, dobrze strukturyzowany  odpowiednio udokumentowany
+
+
+    7. Wnioski końcowe
+	Ten dokument przedstawia pełny zestaw wymagań funkcjonalnych i niefunkcjonalnych dla 	systemu zarządzania produktami. Firma zlecająca oczekuje aplikacji stabilnej, wydajnej i 	intuicyjnej, spełniającej wszystkie wymienione kryteria.
