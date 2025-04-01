@@ -1,0 +1,80 @@
+Treść Zadania
+Twoim zadaniem jest przeprowadzenie refaktoryzacji poniższego kodu w języku C#.
+
+Tematyka:
+Jesteś programistą pracującym nad systemem do zarządzania zamówieniami w sklepie internetowym. Obecnie system obsługuje różne statusy zamówień, ale kod wymaga poprawy – chcemy zastąpić dużą instrukcję if bardziej eleganckim rozwiązaniem.
+
+Wymagania:
+Zmień metodę GetOrderStatusDescription, aby zamiast instrukcji if wykorzystać strukturę Dictionary.
+
+Kod powinien działać tak samo jak przed refaktoryzacją, ale być bardziej czytelny i zgodny z dobrymi praktykami programistycznymi.
+
+Nie zmieniaj logiki działania programu poza refaktoryzacją metody GetOrderStatusDescription.
+
+Kod przed refaktoryzacją:
+namespace RefaktoryzacjaZamowien
+
+{
+
+    internal class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            Console.Write("Podaj status zamówienia (1 - Nowe, 2 - W trakcie, 3 - Wysłane, 4 - Zrealizowane): ");
+
+            if (int.TryParse(Console.ReadLine(), out int statusId))
+
+            {
+
+                string statusDescription = GetOrderStatusDescription(statusId);
+
+                Console.WriteLine($"Status zamówienia: {statusDescription}");
+
+            }
+
+            else
+
+            {
+
+                Console.WriteLine("Niepoprawny status zamówienia.");
+
+            }
+
+        }
+
+
+
+        private static string GetOrderStatusDescription(int statusId)
+
+        {
+
+            if (statusId == 1) return "Nowe zamówienie";
+
+            if (statusId == 2) return "Zamówienie w trakcie realizacji";
+
+            if (statusId == 3) return "Zamówienie wysłane";
+
+            if (statusId == 4) return "Zamówienie zrealizowane";
+
+            return "Nieznany status zamówienia";
+
+        }
+
+    }
+
+}
+
+
+
+
+
+Oczekiwany efekt po refaktoryzacji
+Po wprowadzeniu zmian kod powinien wyglądać następująco:
+
+Zamiast instrukcji if w metodzie GetOrderStatusDescription należy zastosować Dictionary, aby przypisywać statusy zamówień do ich opisów w bardziej przejrzysty sposób.
+
+Logika działania powinna pozostać niezmieniona.
